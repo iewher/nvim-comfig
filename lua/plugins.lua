@@ -11,7 +11,17 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Plugins
+-- Плагины.
+
 require("lazy").setup({
+  
+  -- Tokyonight - тема neovim.
+
+  {
+	"folke/tokyonight.nvim",
+	lazy = false,
+	priority = 1000,
+	opts = {},
+  },
 
 })
