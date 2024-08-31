@@ -1,2 +1,1 @@
-require('plugins')
-require('theme')
+require('config.lazy')
