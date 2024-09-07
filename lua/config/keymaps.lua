@@ -3,4 +3,4 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<tab>", ":Neotree reveal<CR>", {})
-vim.keymap.set("n", "<C-s>", ":w", {})
+vim.keymap.set("n", "<C-s>", ":w<CR>", {})

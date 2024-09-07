@@ -3,7 +3,6 @@ if true then
 end
 
 return {
-
   -- add pyright to lspconfig
   {
     "neovim/nvim-lspconfig",
