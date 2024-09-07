@@ -8,7 +8,7 @@ vim.opt.hlsearch = true
 vim.keymap.set("n", "<C-t>", ":Neotree reveal<CR>", {})
 
 -- Cmdline
-vim.keymap.set("n", ":", ":FineCmdline<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", ":", ":FineCmdline<CR>", {})
 
 -- Stylua
 vim.keymap.set("n", "<C-f>", ":lua require('stylua-nvim').format_file()<CR>", {})
