@@ -1,14 +1,3 @@
--- Настройки nvim.
-vim.opt.number = true
-vim.opt.syntax = "enable"
-vim.opt.wrap = true
-vim.opt.hlsearch = true
-
--- Neotree.
-vim.keymap.set("n", "<tab>", ":Neotree reveal<CR>", {})
-
--- Cmdline
-vim.keymap.set("n", ":", ":FineCmdline<CR>", {})
-
--- Stylua
-vim.keymap.set("n", "<C-s>", ":lua require('stylua-nvim').format_file()<CR>:w<CR>", {})
+-- Options are automatically loaded before lazy.nvim startup
+-- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+-- Add any additional options here
