@@ -50,4 +50,33 @@ return {
       },
     },
   },
+
+  -- add gopls to lspconfig
+  {
+    "neovim/nvim-lspconfig",
+    ---@class PluginLspOpts
+    opts = {
+      ---@type lspconfig.options
+      servers = {
+        gopls = {
+          settings = {
+            gopls = {
+              usePlaceholders = true,
+              staticcheck = true,
+            },
+          },
+          on_attach = function()
+            -- форматирование по сохранению
+            vim.api.nvim_exec(
+              [[
+              autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
+              autocmd BufWritePre <buffer> lua vim.lsp.buf.organize_imports()
+            ]],
+              false
+            )
+          end,
+        },
+      },
+    },
+  },
 }
